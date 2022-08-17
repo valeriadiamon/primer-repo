@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 242, 253);
+}
+#nom{
+    color:rgb(150, 76, 134);
+    font-family: 'Lobster Two', cursive;
+    font-size: 60px;
+}
+#foto{
+    display: inline;
+    width: 150px;
+}
+#menu
+{
+    background-color: rgb(102, 50, 91);
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;  
+}
+h2{
+    color: rgb(150, 76, 134);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:rgb(182, 102, 164);
+}
+nav{
+    position: -webkit-sticky;
+position: sticky;
+top: 20px;
+}
+li{
+    display: inline-block;
+}

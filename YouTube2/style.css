@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    --gris: rgb(240, 239, 236);
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#menu {
+    background-color: rgba(0,0,0, 0);
+    margin: 0 30px;
+}
+#hamb{
+    width: 20px;
+}
+#logo{
+    width: 100px;
+}
+.lupa{
+    height: 40px;
+    padding: 5px 15px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: rgb(240, 239, 236);
+}
+.buscar{
+    padding-left: 5px;
+    flex-grow: 1;
+    border: 1px solid rgb(192, 192, 192);
+    height: 40px;
+}
+.buscar:focus {
+    border:0;
+}
+.barra{
+    display: flex;
+    /*border: 1px solid;*/
+    align-items: center;
+    width:50%;
+    margin: 0 auto;
+}
+/*.barra:focus{
+    border: 1.5px solid rgb(50, 40, 190);
+}*/
+.ico{
+    width: 30px;
+    margin: 0 10px;
+}
+#mic {
+    background-color: rgb(240, 239, 236);
+    border-radius: 100%;
+    width: 40px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.foto{
+    width: 30px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;    
+}
+.sidebar img{
+    margin-top: 20px;
+}
+.sidebar p{
+    font-size: 12px;
+}
+#intereses{
+    display: flex;
+    margin: 10px 0 0 80px;
+    border-top: 1px solid rgba(165, 165, 165, 0.5);;
+}
+#intereses p{
+    background-color: var(--gris);
+    border: 1px solid rgba(165, 165, 165, 0.5);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+}
+#intereses:nth-child(1){
+    background-color: black;
+
+}
+#videos{
+    display: grid;
+    margin-left: 80px;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.vid{
+    width: 250px;
+}
+.perfil{
+    position: absolute;
+    width: 20px;
+}
+.descrip p{
+    width: 200px;
+    margin-left: 30px;
+}
+/*#videos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 82px;
+    margin-top: 20px;
+}
+.perfil{
+    position: absolute;
+    width: 20px;
+}
+.vid{
+    width: 250px;
+}
+.descrip{
+    position: relative;
+}
+.descrip p{
+    width: 200px;
+    margin-left: 30px;
+}*/

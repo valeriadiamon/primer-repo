@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+    column-gap: 10px;
+    row-gap: 50px;
+
+}
+div{
+    background-color: blueviolet;
+    padding: 2rem;
+    /*margin: 1rem;*/
+    color: white;
+}
+.g6
+{
+    grid-column: 1;
+    grid-row: 1;
+}

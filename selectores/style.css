@@ -1,0 +1,12 @@
+body .other-class {
+  background-color: salmon;
+}
+#botonUno{
+   background-color: slateblue;
+}
+#botonUno:hover{
+  background-color:thistle;
+}
+.class{
+    text-decoration: blink;
+}

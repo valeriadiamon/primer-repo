@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+    --gris: rgb(240, 239, 236);
+}
+#banner{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    padding: 10px 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+#menu {
+    background-color: rgba(255,255,255, 0);
+    margin: 0 30px;
+}
+#hamb{
+    width: 20px;
+}
+#logo{
+    width: 100px;
+}
+.lupa{
+    height: 40px;
+    padding: 5px 15px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: rgb(240, 239, 236);
+}
+.buscar{
+    padding-left: 5px;
+    flex-grow: 1;
+    border: 1px solid rgb(192, 192, 192);
+    height: 40px;
+}
+.buscar:focus {
+    border:0;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    width:50%;
+    margin: 0 auto;
+}
+.ico{
+    width: 25px;
+    margin: 0 20px;
+}
+#mic {
+    background-color: rgb(240, 239, 236);
+    border-radius: 100%;
+    width: 40px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.foto{
+    width: 30px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;    
+}
+.sidebar img{
+    margin-top: 60px;
+}
+.sidebar p{
+    font-size: 12px;
+}
+#intereses{
+    display: flex;
+    margin: 10px 0 0 80px;
+    border-top: 1px solid rgba(165, 165, 165, 0.5);;
+}
+#intereses p{
+    background-color: var(--gris);
+    border: 1px solid rgba(165, 165, 165, 0.5);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+}
+#intereses p:nth-of-type(1){
+    background-color: black;
+    color: white;
+}
+
+#videos{
+    display: grid;
+    margin-left: 80px;
+    margin-top: 110px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    background-color: var(--gris);
+}
+.cuadros{
+    margin-top: 50px;
+}
+.vid{
+    width: 95%;
+}
+.perfil{
+    /*position: absolute;*/
+    width: 30px;
+    border-radius: 100%;
+}
+.descrip{
+    margin-top: 10px;
+}
+.descrip p{
+    width: 220px;
+    margin-left: 45px;
+}
+.titulo{
+    font-weight: bold;
+}
+.datos{
+    margin-top: 10px;
+    font-size: 14px;
+}

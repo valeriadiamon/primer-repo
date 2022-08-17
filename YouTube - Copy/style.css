@@ -1,0 +1,208 @@
+*{
+    font-size:62.5%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    --gris: rgb(245, 245, 245);
+    font-family: 'Roboto', sans-serif;
+}
+#banner{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    padding: 1rem 0px;
+    z-index: 3;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+#menu {
+    background-color: rgba(255,255,255, 0);
+    margin: 0 3rem;
+}
+#hamb{
+    width: 2rem;
+}
+#logo{
+    width: 10rem;
+}
+.lupa{
+    height: 4rem;
+    padding: 0.5rem 1.5rem;
+    border: 0.01rem solid rgb(190, 190, 190);
+    background-color: var(--gris);
+}
+.lupa:hover{
+    background-color: rgb(230, 230, 230);
+}
+.buscar{
+    padding-left: 5px;
+    flex-grow: 1;
+    border: 0.01rem solid rgb(192, 192, 192);
+    height: 4rem;
+    font-size: 1.6rem;
+}
+.buscar:focus {
+    border:0;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    width:50%;
+    margin: 0 auto;
+}
+.ico{
+    width: 2.5rem;
+    margin: 0 2rem;
+}
+#mic {
+    background-color: rgb(240, 239, 236);
+    border-radius: 100%;
+    width: 4rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+.foto{
+    width: 3rem;
+    border-radius: 100%;
+    margin-right: 2rem;
+}
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;    
+}
+.side:hover{
+    background-color: rgb(230, 230, 230);
+}
+.side{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem 0 1.5rem 0;
+}
+.side p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+#intereses{
+    display: flex;
+    margin: 1rem 0 0 8rem;
+    border-top: 0.01rem solid rgba(165, 165, 165, 0.5);;
+}
+#intereses p:hover{
+    background-color: rgb(230, 230, 230);;
+}
+#intereses p{
+    background-color: var(--gris);
+    border: 0.01rem solid rgba(165, 165, 165, 0.5);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 0 0;
+    white-space: nowrap; /*para no dar salto de linea*/
+    font-size: 1.4rem;
+    ;
+}
+#intereses p:nth-of-type(1){
+    background-color: black;
+    color: white;
+}
+#flecha{
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    right: 0;
+}
+
+
+#videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--gris);
+    margin: 11rem 0 0 8rem;
+}
+.cuadro{
+   margin: 2rem 0 4rem 0;
+}
+.cuadro:hover{
+    z-index: 2;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(196, 191, 191, 0.8);
+    transition-delay: 0.7s;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+.vid{
+    width: 28rem;
+}
+.perfil{
+    position: absolute;
+    width: 3rem;
+    border-radius: 100%;
+    margin: 0 1rem 0 1rem;
+}
+.descrip{
+    margin-top: 1rem;
+}
+.descrip p{
+    width: 22rem;
+    margin-left: 4.5rem;
+}
+.titulo{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.datos{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: rgb(119, 119, 119);;
+}
+
+
+@media screen and (max-width: 720px) {
+    .sidebar{
+        display: none;
+    }
+    .buscar{
+        display: none;
+    }
+    .barra{
+        margin: 0 auto;
+    }
+    .ico{
+        margin: 0 1rem ;
+    }
+    #videos{
+        margin: 11rem 0 0 0;
+    }
+    .lupa{
+        padding: 0.5rem;
+    }
+    #intereses{
+        margin: 1rem 0 0 1rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    .sidebar{
+        display: none;
+    }
+    .ico{
+        margin: 0 0.5rem ;
+    }
+    .menu{
+        padding: 0 0.5rem;
+    }
+}

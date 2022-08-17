@@ -1,0 +1,10 @@
+.sti{
+    position: sticky;
+    top: 0px;
+}
+.otra{
+    position: sticky;
+    background-color: palevioletred;
+    height: 200px;
+    overflow: scroll;
+}
